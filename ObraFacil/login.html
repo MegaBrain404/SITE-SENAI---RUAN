@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Obra Fácil</title>
+    <link rel="stylesheet" href="css/estilo-simples.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo da loja Obra Fácil">
+        <h1>Login</h1>
+    </header>
+
+    <nav aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="login.html" aria-current="page">Login</a>
+        <a href="quem_somos.html">Quem somos</a>
+    </nav>
+
+    <main class="pagina-login">
+        <h2>Entre na sua conta</h2>
+        <form action="login.html" method="post">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button class="botao-wavy" type="submit"><span>Entrar</span></button>
+        </form>
+        <p class="aviso-cadastro">Não tem cadastro? <a href="cadastro.html">Cadastre-se aqui</a>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Obra Fácil</p>
+    </footer>
+</body>
+</html>

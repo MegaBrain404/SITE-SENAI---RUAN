@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Obra Fácil</title>
+    <link rel="stylesheet" href="css/estilo-simples.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo da loja Obra Fácil">
+        <h1>Cadastro e contato</h1>
+    </header>
+
+    <nav aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="cadastro.html" aria-current="page">Cadastro</a>
+        <a href="login.html">Login</a>
+        <a href="quem_somos.html">Quem somos</a>
+    </nav>
+
+    <main class="pagina-cadastro">
+        <h2>Conta pra gente como podemos ajudar</h2>
+
+        <form action="cadastro.html" method="post" enctype="multipart/form-data">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" minlength="3" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Celular:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" title="Digite assim: (11) 99999-9999" required>
+
+            <fieldset>
+                <legend>O que você procura?</legend>
+                <label><input type="radio" name="interesse-principal" value="material" required> Materiais de construção</label>
+                <label><input type="radio" name="interesse-principal" value="ferramenta"> Ferramentas</label>
+                <label><input type="radio" name="interesse-principal" value="pintura"> Pintura</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Marque outros assuntos do seu interesse:</legend>
+                <label><input type="checkbox" name="interesses" value="reforma"> Reforma</label>
+                <label><input type="checkbox" name="interesses" value="eletrica"> Material elétrico</label>
+                <label><input type="checkbox" name="interesses" value="hidraulica"> Material hidráulico</label>
+            </fieldset>
+
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto">
+                <option value="">Escolha uma opção</option>
+                <option value="produto">Dúvida sobre um produto</option>
+                <option value="orcamento">Orçamento</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="documento">Enviar um arquivo (opcional):</label>
+            <input type="file" id="documento" name="documento" accept=".pdf,.png,.jpeg,.jpg">
+
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui"></textarea>
+
+            <p><label><input type="checkbox" name="termos" required> Aceito receber uma resposta sobre este contato.</label></p>
+
+            <button class="botao-wavy" type="submit"><span>Enviar</span></button>
+            <button class="botao-wavy botao-secundario" type="reset"><span>Limpar</span></button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Obra Fácil</p>
+        <p><a href="index.html">Voltar ao início</a></p>
+    </footer>
+</body>
+</html>
